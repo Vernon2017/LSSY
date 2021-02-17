@@ -1,7 +1,0 @@
-redis
-baostock
-pytdx
-akshare
-pycryptodome
-plotly
-tornado
