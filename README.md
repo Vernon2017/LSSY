@@ -85,22 +85,23 @@ http://127.0.0.1:8000/
 ```
 
 **redis 快照报错**
+
 修改配置文件
 
-'''
+```
 /etc/redis/redis.conf
-'''
+```
 
-'''
+```
 ################################ SNAPSHOTTING  ################################ 下面的
 stop-writes-on-bgsave-error yes
-'''
+```
 
 改为
 
-'''
+```
 stop-writes-on-bgsave-error no
-'''
+```
 
 
 # 初次启动注意事项
