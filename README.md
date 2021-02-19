@@ -84,6 +84,14 @@ https://edu.csdn.net/course/detail/31906
 http://127.0.0.1:8000/
 ```
 
+# redis 快照报错
+修改配置文件 /etc/redis/redis.conf
+将 ################################ SNAPSHOTTING  ################################ 下面的
+stop-writes-on-bgsave-error yes
+改为
+stop-writes-on-bgsave-error no
+
+
 # 初次启动注意事项
 
 首次部署LSSY量化交易系统，会下载大量财务历史等数据，根据网络情况可能会很慢，建议晚上睡觉前启动系统，一般到第二天就全部下载完成了，仅首次运行，后续每天只需要更新k线即可，速度会快很多。
